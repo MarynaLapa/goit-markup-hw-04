@@ -1,0 +1,297 @@
+/* CSS Custom Properties */
+:root {
+    --ocean-color: #404BBF;
+    --iris-color: #4D5AE5;
+    --navy-blue-color: #2E2F42;
+    --green-color: #31D0AA;
+    --slate-color: #434455;
+    --light-slate-color: #8E8F99;
+    --cornflower-color: #E7E9FC;
+    --cloud-color: #F4F4FD;
+    --navy-blue-modal-color: #2E2F42;
+    --grey-color: #2e2f42;
+    --white-color:#FFFFFF;
+    --dairy-color: #FCFCFC;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--slate-color);
+    background: var(--white-color);
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+main {
+    flex-grow: 1;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.list-row {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.link {
+    text-decoration: none;
+}
+
+
+/* Header start */
+.container-nav {
+    justify-content: space-between;
+    align-items: center;
+}
+.header {
+    align-items: center;
+    border-bottom: 1px solid var(--cornflower-color);
+}
+.header-page-nav {
+    align-items: center; 
+    padding: 24px 0;
+}
+.logo {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--iris-color);
+    text-transform: uppercase;   
+    margin-right: 76px; 
+}
+.color-header-logo {
+    color: var(--navy-blue-color);
+}
+.page-nav-list {
+    gap: 40px;
+}
+.page-nav-link {
+    font-weight: 500; 
+    color: var(--navy-blue-color);
+    padding: 24px 0;
+}
+.page-nav-link:hover,
+.page-nav-link:focus {
+    color: var(--ocean-color);
+}
+.contacts {
+    font-style: normal;
+}
+.contacts-list {
+    gap: 40px;
+}
+.contacts-link {
+    color: var(--slate-color);
+    text-decoration: none;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--ocean-color);
+}
+/* Header end */
+
+
+/* Hero section start */
+.section-hero {
+    background-color: var(--navy-blue-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+         url(/images/hero/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 188px 0;
+}
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--white-color);
+    max-width: 496px; 
+    text-align: center;
+    margin: 0 auto 48px;
+}
+.hero-button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: var(--iris-color);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--ocean-color);
+}
+/*  Hero section end */
+
+
+/* Section 2 Benefits stsrt */
+.section-benefits {
+    padding: 120px 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.benefits-list { 
+    gap: 24px;   
+}
+.benefits-list-item{
+    display: block;
+    width: calc((100% - 72px) / 4);
+}
+.list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--navy-blue-color);
+    margin-bottom: 8px;
+}
+/* Section 2 Benefits end */
+
+
+/* Section 3 What are we doing start*/
+.section-made {
+    padding-bottom: 120px;
+}
+.section-title {
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--navy-blue-color);
+    text-align: center;
+    margin-bottom: 72px;
+}
+.card-img {
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+}
+.made-list,
+.team-list {
+    justify-content: center;
+    gap: 24px;
+}
+/* Section 3 What are we doing end*/
+
+
+/* Section 4 Our team start*/
+.section-team {
+    background-color: var(--cloud-color);
+    padding: 120px 0;    
+}    
+.team-list-bg {
+    background-color: var(--white-color);
+    display: block;
+    align-items: center;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-card-text {
+    padding: 32px 16px;
+    text-align: center;
+}
+/* Section 4 Our team end*/
+
+
+/* Footer start*/
+.footer {
+    background-color: var(--navy-blue-color);
+    padding: 100px 0;
+}
+.footer-logo{
+    margin-bottom: 16px;
+}
+.color-footer-logo {
+    color: var(--cloud-color);
+}    
+.footer-text {
+    color: var(--cloud-color);
+    max-width: 264px
+}
+/* Footer end*/
+
+
+/* Portfolio - Main section Our project start */
+.section-portfolio {
+    padding: 96px 0 120px;
+}
+.button-list {
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
+}
+.filter-button {
+    background-color: var(--cloud-color);
+    border: 1px solid var(--cornflower-color);
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--iris-color);
+    cursor: pointer;
+    padding: 12px 24px;
+    
+}
+.filter-button:hover, 
+.filter-button:focus {
+    background-color: var(--ocean-color);
+    color: var(--white-color);
+    border: 1px solid transparent;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio-item {
+    width: calc((100% - 48px) / 3);    
+}
+.list-text {
+    color: var(--slate-color);
+}
+.portfolio-block {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower-color);
+    border-top: none;
+}
