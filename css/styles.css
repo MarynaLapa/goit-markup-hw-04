@@ -192,11 +192,15 @@ img {
 .container-bg {
     background-color: var(--cloud-color);
     margin-bottom: 8px;
-    padding: 24px;
+    padding: 24px 100px;
+    border-radius: 4px;
 }
-.benefits-image {
-    margin: 0 auto;
-}    
+.icon {
+    display: inline-block;
+    stroke-width: 0;
+    stroke: currentColor;
+    /* fill: currentColor; */
+}
 /* Section 2 Benefits end */
 
 
@@ -247,16 +251,20 @@ img {
     display: flex;
     gap: 24px;
 }
+.networks{
+    background-color: var(--white-color); 
+    fill: var(--iris-color);
+}
 .social-link {
     display: block;
-    padding: 12px;
-    background-color: var(--iris-color);
-    border-radius: 50%;
+    /* padding: 12px; */
+    /* background-color: var(--iris-color); */
+    /* border-radius: 50%; */
 }
-.social-link:hover,
+/* .social-link:hover,
 .social-link:focus {
     background-color: var(--ocean-color);
-}
+} */
 /* Section 4 Our team end*/
 
 
