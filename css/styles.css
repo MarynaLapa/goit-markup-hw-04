@@ -62,14 +62,16 @@ img {
 .container-nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
+    align-items: center;
 }
 .header {
     align-items: center;
     border-bottom: 1px solid var(--cornflower-color);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .header-page-nav {
     display: flex;
+    align-items: center;
 }
 .logo {
     display: inline-block;
@@ -88,13 +90,14 @@ img {
 .page-nav-list {
     display: flex;
     gap: 40px;
+    position: relative;
 }
 .page-nav-link {
     display: block;
     font-weight: 500; 
+    padding: 24px 0;
     color: var(--navy-blue-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-nav-link:hover,
 .page-nav-link:focus {
@@ -103,13 +106,13 @@ img {
 .nav-line-color {
     color: var(--ocean-color);
 }
-.nav-line::after {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 4px solid var(--ocean-color);
-    border-radius: 2px;
+.page-nav-link::after {
+       position: absolute;
     content: ""; 
-    padding-bottom: 20px;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--ocean-color);
 }
 .contacts {
     font-style: normal;
