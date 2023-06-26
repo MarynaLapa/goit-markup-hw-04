@@ -336,7 +336,7 @@ img {
 .custormers-svg:hover,
 .customers-link:focus,
 .custormers-svg:focus {
-    fill: var(--ocean-color);
+    color: var(--ocean-color);
     border-color: var(--ocean-color);
 }
 
